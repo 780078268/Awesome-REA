@@ -1472,5 +1472,15 @@
       "文档中的验证脚本经编译后的命令行与 stdio MCP 运行两个工具，以 Flutter Gallery 2.9.2 发布版 APK 对照固定的期望文件：三个 ABI 上快照哈希一致，并核对引擎标签与 URI 数量；另用普通 aapt2 构建的 APK 检查不误报。指南报告 Gallery 流程与 147 项 Flutter 专项测试在 macOS 14.8.9 x86-64 与 Windows 11 x64 虚拟机中通过。",
       "在已合并的 PR #1582 中，一位独立审阅者报告：在合并前的分支版本上，三个 F-Droid 应用 PocketDhamma、Flutter McSweepy 与 cone 的哈希、ELF 段和 package 列表与 readelf／strings 检查一致，非 Flutter 对照应用未被识别为 Flutter；讨论串记录了对所发现问题的修复。这些检查针对构建身份与结构，不是应用逻辑重建。REA 声明 MIT，所分析的 APK 保留各自许可；本合集未运行 REA 或任何 APK。"
     ]
+  },
+  "lego-island-portable-case": {
+    "name": "LEGO Island 可移植版：反编译源码的多平台移植",
+    "requirements": [
+      "README 将其描述为基于 isledecomp/isle 的英文版 LEGO Island 1.1 可移植版本，目标是实现平台无关，不改动玩法，也不为改进而重写代码；贡献指南表示，对 LEGO1 代码的修改通常只在直接提升平台兼容性时才会接受。轻度模组通过 extensions 实现，所审版本包含多人联机、第三人称镜头和素材加载器。状态表列出 Windows、macOS、Linux、FreeBSD、DOS、Web、iOS、Android、Xbox One、PlayStation Vita、Nintendo Switch 和 Nintendo 3DS。",
+      "需已有一份 LEGO Island。引导安装器要求零售版 CD-ROM 或由其制作的光盘镜像，并称任何语言的 1.0 或 1.1 零售版均可；可选的高清音频包仅适用于英文 1.1 版。安装器称 isle.pizza 的 Web 版本以串流方式运行、无需本地光盘；本次核查未检查该网站提供的内容及其依据。",
+      "构建使用 CMake 3.25+ 和 C++17 编译器；CMake 默认下载 SDL3 和 iniparser，libsmacker 与 miniaudio 为子模块。README 未提供单独的构建指南，而是让读者参考 CI 工作流；该工作流使用 MSVC、MinGW、macOS／Linux 工具链以及 Emscripten、devkitPro、VitaSDK、DJGPP、Android 等平台 SDK，桌面设置工具需要 Qt 6。发布下载为 master 的持续构建，README 提醒可能出现回归。",
+      "所审 CI 检查代码格式，并为各平台目标完成配置、构建和打包；它不运行游戏，也不与原版行为比较。各平台状态项是 CI 徽章，不是玩法一致性结果。Kaitai Struct 描述文件记录了存档、动画、世界数据库和纹理格式。本合集未构建或运行该移植。",
+      "仓库采用 LGPL-3.0；内置及下载的第三方库各自适用其条款，原游戏数据、LEGO 商标以及安装器取自原安装程序的位图仍有各自权利约束。所审来源未确立 AI 或 REA 使用归因。"
+    ]
   }
 }
