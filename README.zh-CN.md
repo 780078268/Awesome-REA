@@ -15,7 +15,7 @@
 <!-- BEGIN GENERATED CONTENTS -->
 **按目标找工具与案例**
 
-- [网站](#website) (16) · [游戏](#game) (43) · [应用](#app) (42)
+- [网站](#website) (16) · [游戏](#game) (44) · [应用](#app) (42)
 - [原生二进制](#native-binary) (20) · [固件与硬件](#firmware) (12) · [协议](#protocol) (11)
 
 **论文与工作流**
@@ -24,7 +24,7 @@
 
 **更多浏览方式**
 
-- [全部案例](https://awesomerea.org/zh/cases/) (57) · [相关合集](#related-collections) (4) · [完整仓库索引](#完整仓库索引) (2,836)
+- [全部案例](https://awesomerea.org/zh/cases/) (58) · [相关合集](#related-collections) (4) · [完整仓库索引](#完整仓库索引) (2,836)
 <!-- END GENERATED CONTENTS -->
 
 ## 按任务查找
@@ -309,6 +309,12 @@ REA 标签指向单独维护的[上游 CLI 与 MCP 项目](https://github.com/mo
   重建 Perfect Dark 的 Nintendo 64 代码，并提供生成一致 ROM 的构建流程。项目将重建源码与使用者自备原 ROM 中的素材结合，再检查各版本产物的哈希。这是可复现构建研究案例，与独立的原生 PC 移植不同；此处的一致性结果仍为项目报告。
 
   案例 · 独立重建 · [使用条件与证据](https://awesomerea.org/zh/resources/perfect-dark-matching-decomp-case/)
+
+- [**vf2-decomp：经差分验证的 Virtua Fighter 2 代码恢复**](https://github.com/celsowm/vf2-decomp)
+
+  将 Virtua Fighter 2 Version 2.1 的 Sega Model 2A i960 程序恢复为可移植、非一致性的 C17 代码，每条恢复路径须在受控边界上与参考 i960 执行器一致才被接受。仓库还提供 ROM 校验、i960 与 68000 分析工具、有限范围的 Model 2A 硬件模型，以及基于快照的差分运行器。README 说明它尚不是可游玩的移植；对战流程、格斗、物理、AI、光栅化及大部分音频仍未完成。
+
+  案例 · 独立重建 · [使用条件与证据](https://awesomerea.org/zh/resources/vf2-decomp-differential-recovery-case/)
 
 #### 工具、项目与集成
 

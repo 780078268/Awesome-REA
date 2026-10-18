@@ -26,9 +26,9 @@ Repository counts use normalized GitHub repository, tree and file links within e
 | Pending (`pending`) | 472 | 471 | Primary review or complete catalog coverage remains pending; partial matches stay here. |
 | Insufficient evidence (`insufficient-evidence`) | 57 | 57 | An idea, request or unsupported reconstruction claim is retained as a lead. |
 
-69 occurrences have catalog links. They reference 60 distinct resource IDs and 1 paper ID. Match scope is recorded separately; do not add these populations as unique projects.
+70 occurrences have catalog links. They reference 61 distinct resource IDs and 1 paper ID. Match scope is recorded separately; do not add these populations as unique projects.
 
-This ledger records a new primary-source review for 64 inventory units. Other catalog-linked entries inherit the catalog’s separate source-review record; a link does not mean the entire collection report was reviewed again. No runtime experiment was independently reproduced for this ledger.
+This ledger records a new primary-source review for 65 inventory units. Other catalog-linked entries inherit the catalog’s separate source-review record; a link does not mean the entire collection report was reviewed again. No runtime experiment was independently reproduced for this ledger.
 
 Repository README scan IDs and counts are deliberately absent. A successful README fetch, an upstream list entry and a source-reviewed case are different facts.
 
@@ -58,6 +58,7 @@ Repository README scan IDs and counts are deliberately absent. A successful READ
 | AYN Odin 2 Portal: Codex-assisted native Omarchy bring-up | Pending | [Source](https://github.com/TechLuddite/omarchy-mobile-odin2/blob/00d11efc018971f6bab711e7952ff184cad333c2/README.md) |
 | Virtual Desktop Streamer: rehosting the platform layer on Linux | Already curated | [Source](https://github.com/cudanexus/vd-streamer-linux/blob/e65c302f13639f044742bdc4951ab1a424c1c929/README.md) |
 | Open Claude UI: REA-informed interface reference components | Already curated | [Source](https://github.com/Caho1/open-claude-ui/blob/ddf3aea1711db62fd6d24343bbab500a5ae69f64/README.md) |
+| vf2-decomp: differentially validated Virtua Fighter 2 recovery | Pending | [Source](https://github.com/celsowm/vf2-decomp/blob/9a9f7270f090cfa0f38b0ec6a22c3e53dae4bd18/README.md) |
 | Eleven | Already curated | [Source](https://github.com/Zfinix/eleven/blob/94760718dfd741ba93fcc9b591eb39a96c034103/README.md) |
 | TCLimate: reconstructing selected TCL Home cloud controls | Already curated | [Source](https://github.com/umarz317/TCLimate/blob/2a33c2013dbf3f297238131ca9eb6e287b2beb67/Docs/Investigation.md) |
 | Ledger Reborn: an independent accounting app informed by QuickBooks study | Already curated | [Source](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/docs/CASE_STUDY.md) |
@@ -107,6 +108,7 @@ Partial or related catalog mappings:
 
 - `song:touhou-reconstruction` — The TH08 component is curated; TH04 and TH095 components in this combined report remain outside the mapping.
 - `song:artcraft-boundary` — PhotoCraft, WordCraft, GridCraft and DeckCraft cover four documented application implementations only. The broader Adobe/Office claims remain outside these partial mappings; proprietary source recovery, complete original-application/backend equivalence, legal clean-room certification and independent runtime reproduction are not established.
+- `song:virtua-fighter-ai-decompilation` — The post’s two links resolve to celsowm’s repositories. The pinned vf2-decomp documents a BSD-3-Clause, non-matching C17 recovery of Virtua Fighter 2 Version 2.1 that accepts paths only when they match a reference i960 executor; it is now curated, but that mapping is partial. The pinned vf3-decomp, a work-in-progress Dreamcast Virtua Fighter 3tb C port, has agent notes and coverage logs but no README or license file, so it stays uncurated and the combined report remains pending. REA use is not established; results are project-reported.
 - `song:schaller-opticfilm-thinkpad-linux` — The existing scanner investigation and the separate ThinkPad IMX471 tuning/driver case cover two bounded components of this report. Their mappings remain partial: neither asserts complete scanner/camera behavior, all-device compatibility or independent runtime reproduction.
 - `song:rea-reconstruction-companion` — The Pocket Tasks mapping covers one maintainer-informed command-line reconstruction with published candidate and bounded comparison evidence. It does not cover the broader Companion workflow, other examples or model/host effectiveness. Prior source exposure, pending human review and the historical instruction-packet hash remain explicit; no independent runtime reproduction is established.
 - `hao-games:row-134` — The TH08 reconstruction is curated, but this separate WebAssembly companion repository is not covered as the same artifact. Its own implementation and deployment claims remain pending.
