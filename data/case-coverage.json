@@ -4045,12 +4045,17 @@
         "https://x.com/i/status/2111167738056167864",
         "https://github.com/zzusec/apk-reverse"
       ],
-      "state": "pending",
-      "review_level": "inventory-only",
-      "reviewed_at": "2026-10-17",
-      "reason_en": "A collection lead awaiting primary-source review; listing does not verify implementation or results.",
-      "reason_zh": "合集线索，等待一手来源核查；被列入合集不代表实现或结果已获验证。",
-      "primary_evidence_urls": [],
+      "state": "insufficient-evidence",
+      "review_level": "primary-source-reviewed",
+      "reviewed_at": "2026-10-18",
+      "reason_en": "The named repository newliver666/apk-reverse and its owner account return 404 at review. A surviving fork, zzusec/apk-reverse, whose GitHub metadata names that repository as parent, documents an MIT-licensed agent skill for Android APK analysis, patching, repacking and runtime work with its own measurement notes; it is a tool, not a reconstruction of a named app. The posts' star, ban and better-than-REA claims are not adopted. Retain the lead without a catalog mapping; a tool record would need an original or maintained source rather than a backup fork.",
+      "reason_zh": "所指仓库 newliver666/apk-reverse 及其所有者账号在核查时均返回 404。尚存的分叉 zzusec/apk-reverse 在 GitHub 元数据中以该仓库为上游，记录了一个采用 MIT 许可、用于 Android APK 分析、修补、重新打包与运行时工作的智能体 skill，并附有自身的测量说明；它是工具，而非对某个具名应用的重建。帖子中关于星标数、封禁及优于 REA 的说法均不采纳。保留此线索而不建立目录映射；若要收录为工具条目，需要原始或持续维护的来源，而非备份分叉。",
+      "primary_evidence_urls": [
+        "https://github.com/zzusec/apk-reverse/blob/1b94651b1e3c4479336406b8b5c06d4c1fd7082e/README.md",
+        "https://github.com/zzusec/apk-reverse/blob/1b94651b1e3c4479336406b8b5c06d4c1fd7082e/LICENSE",
+        "https://x.com/i/status/2110594366989369744",
+        "https://x.com/i/status/2111167738056167864"
+      ],
       "catalog_matches": []
     },
     {
@@ -13206,15 +13211,15 @@
     "alias_merges": 2,
     "occurrences_by_state": {
       "already-curated": 62,
-      "insufficient-evidence": 56,
-      "pending": 473
+      "insufficient-evidence": 57,
+      "pending": 472
     },
     "units_by_state": {
       "already-curated": 61,
-      "insufficient-evidence": 56,
-      "pending": 472
+      "insufficient-evidence": 57,
+      "pending": 471
     },
-    "primary_reviewed_units": 63,
+    "primary_reviewed_units": 64,
     "catalog_linked_occurrences": 69,
     "distinct_resource_ids": 60,
     "distinct_paper_ids": 1,
