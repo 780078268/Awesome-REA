@@ -1463,5 +1463,15 @@
       "字节补丁写入副本，智能体补丁以建议形式出现，项目修改会记录作者并可撤销。所审阅提交的 CI 在 Ubuntu 和 macOS 上运行类型检查；依赖 Ghidra 的测试套件是单独的本地脚本。本次核查只阅读源码和文档，未安装应用、运行智能体或分析任何目标。",
       "Eleven 采用 Apache-2.0；内置的 REA 和 Node.js 保留各自的 MIT 及其他许可，智能体标志仍归各自所有者。该工具不授予分析、修补或再分发第三方软件的权利，其输出属于智能体辅助分析，而非经验证的源码恢复。"
     ]
+  },
+  "ghostship-sm64-port-case": {
+    "name": "Ghostship：基于 libultraship 的 Super Mario 64 原生移植",
+    "requirements": [
+      "所审阅的 develop 分支声明版本为 3.0.0，与最新的“Alfa”发行版一致。其 src 目录保留了 n64decomp/sm64 重建项目的 audio、engine、game、goddard 和 menu 结构，移植代码位于 src/port；抽查的两个源文件与 n64decomp 对应文件高度相近，只有移植相关改动。README 本身没有指明上游反编译项目，因此这一来源关系属于审阅观察。",
+      "需自备 .z64 字节序的 Super Mario 64 ROM：README 只接受美版和日版，并列出两者的 SHA-1 值。PC 发行版会把 ROM 转换为 sm64.o2r；Switch 版复用在 PC 上生成的 O2R，Android 应用则先核对 ROM 哈希，再在设备上完成转换。项目不附带任何游戏数据。",
+      "源码构建使用 CMake 及 libultraship、Torch 子模块：Windows 需 Visual Studio 2022（v143 工具集）、Python 3 和 CMake，Linux 需 GCC／Clang、Ninja、SDL2、libzip 及列出的其他库。渲染器包括 DirectX 11、OpenGL、Metal，以及驱动支持时的 Vulkan。构建指南仍写着其他 Harbour Masters 移植项目的 sf64.o2r 和 2s2h.elf，文件名需对照当前构建目标核实。",
+      "GitHub Actions 工作流构建 Windows、macOS、Linux、Switch 和网页版本。README 称 CI 构建仅供试玩，并提醒可能出现错误和崩溃。项目没有公布一致性、回归或与原硬件对比的结果，本合集也未构建或运行该移植。",
+      "根目录 LICENSE.md 以 MIT（2026，Lywx）授权项目自有代码。子模块各有条款；源自任天堂代码的内容和 ROM 素材不受该许可覆盖，README 表示不支持盗版。所审来源未确立 REA 或编码智能体的参与。"
+    ]
   }
 }
