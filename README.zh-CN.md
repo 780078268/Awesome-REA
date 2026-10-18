@@ -15,7 +15,7 @@
 <!-- BEGIN GENERATED CONTENTS -->
 **按目标找工具与案例**
 
-- [网站](#website) (16) · [游戏](#game) (43) · [应用](#app) (42)
+- [网站](#website) (16) · [游戏](#game) (44) · [应用](#app) (42)
 - [原生二进制](#native-binary) (20) · [固件与硬件](#firmware) (12) · [协议](#protocol) (11)
 
 **论文与工作流**
@@ -24,7 +24,7 @@
 
 **更多浏览方式**
 
-- [全部案例](https://awesomerea.org/zh/cases/) (57) · [相关合集](#related-collections) (4) · [完整仓库索引](#完整仓库索引) (2,836)
+- [全部案例](https://awesomerea.org/zh/cases/) (58) · [相关合集](#related-collections) (4) · [完整仓库索引](#完整仓库索引) (2,836)
 <!-- END GENERATED CONTENTS -->
 
 ## 按任务查找
@@ -309,6 +309,12 @@ REA 标签指向单独维护的[上游 CLI 与 MCP 项目](https://github.com/mo
   重建 Perfect Dark 的 Nintendo 64 代码，并提供生成一致 ROM 的构建流程。项目将重建源码与使用者自备原 ROM 中的素材结合，再检查各版本产物的哈希。这是可复现构建研究案例，与独立的原生 PC 移植不同；此处的一致性结果仍为项目报告。
 
   案例 · 独立重建 · [使用条件与证据](https://awesomerea.org/zh/resources/perfect-dark-matching-decomp-case/)
+
+- [**Metaforce：在反编译之上重建的《密特罗德 Prime》引擎重实现**](https://github.com/AxioDL/metaforce)
+
+  Metaforce 于 2015 年作为《密特罗德 Prime》引擎的逆向重实现项目启动，现已在 PrimeDecomp 一致性反编译之上重写。其原生应用借助 Aurora GameCube 兼容层，将这些游戏代码以非一致模式编译为桌面和移动端程序，并读取使用者选择的光盘镜像。README 表示重写稳定之前暂不提供构建版本。
+
+  案例 · 独立重建 · [使用条件与证据](https://awesomerea.org/zh/resources/metaforce-metroid-prime-case/)
 
 #### 工具、项目与集成
 
